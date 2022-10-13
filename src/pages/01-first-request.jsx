@@ -1,4 +1,6 @@
 import { useEffect } from "react"
+import { Main } from "../components/ui/Main"
+import { MainTitle } from "../components/ui/MainTitle"
 import { api } from "../lib/axios"
 
 export const FirstRequest = () => {
@@ -19,8 +21,8 @@ export const FirstRequest = () => {
   
 
   return (
-    <div className="p-8">
-      <h2 className="text-slate-700 font-semibold text-lg">First Request</h2>
-    </div>
+    <Main>
+      <MainTitle title="First Request" />
+    </Main>
   )
 }
