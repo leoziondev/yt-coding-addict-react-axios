@@ -1,5 +1,8 @@
 import axios from 'axios'
 
 export const api = axios.create({
-  baseURL: 'https://course-api.com'
+  baseURL: 'https://course-api.com',
+  headers: {
+    Accept: 'application/json'
+  }
 })
